@@ -1,6 +1,6 @@
 hereCreds = {
-    JSKEY: "TociZs4J2oxsZn2dN9MwgmWyP-8fseNd4L_w2prVmwQ",
-    RESTKEY: "baakvPZADWK_R2F5yjFneRX2L9KL8hMeR0w8HQ7fnhw"
+    JSKEY: "5NDKcWDX0n4iTRaVImEEK_62KrSCSYxmQ2aKQrR1cW8",
+    RESTKEY: "c2TJBMm-rxPX6JJl9f-VCZZtuxJKbPJVw0H1s_LZ1bY"
 }
 const agadez = {
     lat: 16.97333,
