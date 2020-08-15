@@ -41,12 +41,12 @@ var platform = new H.service.Platform({
 });
 
 var myPosition = {
-    lat: 17.5968801,
-    lng: 8.0828506
+    lat: 17.59,
+    lng: 8.08
 };
 
 if (mapContainer.clientWidth <= 500) {
-    zooom = 5.3
+    zooom = 5.46
 } else if (mapContainer.clientWidth <= 700) {
     zooom = 5.7
 } else if (mapContainer.clientWidth <= 1024) {
