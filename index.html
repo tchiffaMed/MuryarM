@@ -20,7 +20,9 @@
         <div class="container" style="width: 80%;">
             <div class="nav-wrapper" style="box-shadow:  -20px -20px 60px #d6d6d6, 
             20px 20px 60px #ffffff;">
-          <a href="#" class="brand-logo blue-text valign-wrapper" style="font-size: 1.5em;"><img src="i/fav.svg" alt="" style="width: 40px;">MURYAR MATASSA</a>
+          <a href="index.html" brand-logo blue-text valign-wrapper" style="font-size: 1.5em;"><img src="i/fav.svg" alt="" style="width: 40px;">MURYAR MATASSA</a>
+          <a href="#" data-target="mobi" class="sidenav-trigger"><i class="material-icons blue-text">menu</i></a>
+
           <ul id="nav-mobile" class="right hide-on-med-and-down">
 
             <li><a href="" class="black-text">A propos</a></li>
@@ -33,15 +35,47 @@
            <li>
                 <li class=""><a href="log-in.html" class="black-text">User</a></li>
             </li>
-            li>
-                <li class=""><a href="" class="black-text"><img src="i/1.png" alt="" class="circle grey" style="width: 22px;"></a></li>
-            </li>
+            
+                <li class=""><a href="" class="black-text">
+                        <div class="chip">
+                                <img src="i/1.png" alt="Contact Person">
+                                Farouk Samba
+                              </div>            
+                </li>
           </ul>
         </div>
         </div>      
     </nav>
 
+    <ul id="mobi" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+            </div>
+            <a href="#user"><i class="material-icons ">person</i></a>
+            <a href="#name"><span class="white-text name">Zawren Karatu</span></a>
+            <a href="#email"><span class="white-text email">ZK@gmail.com</span></a>
+          </div>
+      </li>
+        <li><a href="#!"><i class="material-icons"></i></a></li>
+        <li><div class="divider"></div></li>
+        <li>
+          <div class="container">
+            <div class="input-field">
+              <i class="material-icons right">search</i>
+              <input id="icon_prefix" type="search" class="validate">
+              <label for="icon_prefix">Rechercher</label>
+  
+          </div>
+            </div>
+       </li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">S'inscrire</a></li>
+        <li><a class="waves-effect" href="#!">Se connecter</a></li>
+      </ul>
 
+
+<!-- Fin SideNav-->
 
 
 <!-- Le corps-->
@@ -226,15 +260,15 @@
                             <p>First Line <br>
                                 Second Line
                             </p>
-                            <div class="secondary-content white-text"> <br> <span class="blue white-text badge">850 : 76%</span> <br> <span class="red white-text badge" >120 : 24%</span>  </div>
+                            <div class="secondary-content white-text"> <br> <span class="orange white-text badge">850 : 76%</span> <br> <span class="black white-text badge" >120 : 24%</span>  </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle blue">insert_chart</i>
                             <span class="title">Title</span>
-                            <p>First Line <br>
-                                Second Line
+                            <p>1ere Commune <br>
+                                2nd Commune
                             </p>
-                            <div class="secondary-content white-text"> <br> <span class="blue white-text badge">850 : 76%</span> <br> <span class="red white-text badge" >120 : 24%</span>  </div>
+                            <div class="secondary-content white-text"> <br> <span class="green white-text badge">850 : 76%</span> <br> <span class="indigo white-text badge" >120 : 24%</span>  </div>
                         </li>
                       </ul>
           </div>
@@ -266,11 +300,23 @@
 
 
      <script>
+         //NavBar
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+
+        //chips
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.chips');
+        var instances = M.Chips.init(elems, {});
+  });
      
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {});
-    });
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, {});
+        });
+
      </script>
 
 <script>
