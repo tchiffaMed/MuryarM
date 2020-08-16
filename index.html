@@ -6,367 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MuryarMatassa</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
     <link rel="stylesheet" href="muryarM.css">
-
 </head>
-<body>
-<div style="background-color:#fafafa;">
-    <nav class="white ">
-        <div class="container" style="width: 80%;">
-            <div class="nav-wrapper" style="box-shadow:  -20px -20px 60px #d6d6d6, 
-            20px 20px 60px #ffffff;">
-          <a href="index.html" brand-logo blue-text valign-wrapper" style="font-size: 1.5em;"><img src="i/fav.svg" alt="" style="width: 40px;">MURYAR MATASSA</a>
-          <a href="#" data-target="mobi" class="sidenav-trigger"><i class="material-icons blue-text">menu</i></a>
-
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-            <li><a href="" class="black-text">A propos</a></li>
-            <li><a href="" class="black-text">Partenaires</a></li>
-            <li><a href="" class="black-text">FAQ</a></li>
-            <li><a href="" class="black-text">Contact</a></li>
-            <li class="input-field">      
-                <i class="material-icons">search</i>    
-            </li>
-           <li>
-                <li class=""><a href="log-in.html" class="black-text">User</a></li>
-            </li>
-            
-                <li class=""><a href="log-in.html" class="black-text">
-                        <div class="chip">
-                                <img src="i/1.png" alt="Contact Person">
-                                Farouk Samba
-                              </div>            
-                </li>
-          </ul>
-        </div>
-        </div>      
-    </nav>
-
-    <ul id="mobi" class="sidenav">
-        <li>
-          <div class="user-view">
-            <div class="background">
-            </div>
-            <a href="#user"><i class="material-icons ">person</i></a>
-            <a href="#name"><span class="white-text name">Zawren Karatu</span></a>
-            <a href="#email"><span class="white-text email">ZK@gmail.com</span></a>
-          </div>
-      </li>
-        <li><a href="#!"><i class="material-icons"></i></a></li>
-        <li><div class="divider"></div></li>
-        <li>
-          <div class="container">
-            <div class="input-field">
-              <i class="material-icons right">search</i>
-              <input id="icon_prefix" type="search" class="validate">
-              <label for="icon_prefix">Rechercher</label>
-  
-          </div>
-            </div>
-       </li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">S'inscrire</a></li>
-        <li><a class="waves-effect" href="#!">Se connecter</a></li>
-      </ul>
-
-
-<!-- Fin SideNav-->
-
-
-<!-- Le corps-->
-
-    <div class="container" style="margin-top: 18px; width: 95%;">
-        <div class="row">
-
-<!--Gauche Part-->
-    <!--Carte-->
-        <!--Fil d'actualité-->
-        <!--Jeune du Mois-->
-
-        <div class="col l4" >
-            <div class="row">
-                <div class="col s12 l12">
-                    <div class="card white shafe" >
-                    <div class="card-content white-text">
-             <iframe src="here/here.html" title="carte" style="width:100%; height: 600px; border: none;" class="heremap"></iframe>
-                    </div>
-                    <div class="card-action right-align">
-                         <!-- Modal Trigger -->
-                        <a href="#modalhere" class="btn-flat modal-trigger">Vue large <i class="material-icons right"><img src="i/rightCircle.svg" alt="" style="width: 30px;margin-top:0.2em;"></i></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-             
-                        <!-- Modal de la carte -->
-                        <div id="modalhere" class="modal modal-fixed-footer">
-                            <div class="modal-content">
-                                <h4>Modal Header</h4>
-                                <iframe src="here/here.html" title="carte" style="width:100%; height: 600px; border: none;" class="heremap"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-                            </div>
-                        </div>
-            <div class="row">
-                    <div class="col l12">
-                        <div class="card white shafe">
-                        <div class="card-content white-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Jeune du Mois</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-
-
-
-
-      
-<!--<Middle Part-->
-        <div class="col l6">
-     <!--Boutons post-->
-            <div class="row">
-                <div class="col s4 l4 center-align">
-                        <a class="waves-effect waves-light btn-large white black-text shafe" style="width: 100%;margin-top: 5px; "><i class="material-icons left"><img src="i/edit.svg" alt="" style="width: 25px;"></i>Article</a>
-                </div>
-                    <div class="col s4 l4 center-align">
-                            <a class="waves-effect waves-light btn-large white black-text shafe" style="width: 100%; margin-top: 5px;"><i class="material-icons left"><img src="i/film.svg" alt="" style="width: 25px;"></i>Medias</a>
-                        </div>
-                        <div class="col s4 l4 center-align">
-                                <a class="waves-effect waves-light btn-large white black-text shafe center-align" style="width: 100%; margin-top: 5px;"><i class="material-icons left"><img src="i/trello.svg" alt="" style="width: 25px;"></i>Sondage</a>
-                        </div>
-                    </div>
-
-        <!--Hello-->
-            <div class="row">
-                <div class="col s12 l12 ">
-                    <div class="card-panel white shafe" >
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem enim perspiciatis 
-                    </div>
-                </div>
-            </div>
-
-            <!--Post-->
-
-                    <div class="row">
-                            <div class="col l12 " style="padding: 5px;">
-                                <div class="white" >
-                                        <div class="card white shafe">
-                                        <div class="card-content black-text">
-                                            <img src="i/1.png" alt="" class="circle grey" style="width: 30px;"> <span></span>
-                                          <span class="card-title">Article</span>
-                                          <div class="card-panel shafe" style="background-color: #edf0f2; border: 1px solid #dfdfdf" >I am a very simple card. I am good at containing small bits of information.
-                                          I am convenient because I require little markup to use effectively.
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores mollitia, sapiente alias ut dolorum 
-                                        qui in porro praesentium aut numquam. Labore modi architecto quisquam placeat,
-                                         eveniet eum voluptas quam.</p>
-                                        </div>
-                                        <div class="card-action ">
-                                            <div class="row right-align">
-                                                <!--1.Oui 2.Non 3.Comment 4.Partage-->
-
-                                                <div class="col s2 ">
-                                                    <a href="#" class="black-text"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg> <span class="counter oui">10000</span> </a>
-                                                </div>
-
-                                                <div class="col s2">
-                                                    <a href="#" class="black-text"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-down"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg> <span class="counter oui">10000</span></a>
-                                                </div>
-
-                                                <div class="col s2">
-                                                    <a href="#" class="black-text"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> <span class="counter oui">10000</span></a>
-                                                </div>
-
-                                                <div class="col s2">
-                                                   <a href="#" class="black-text"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-up-right"><polyline points="15 14 20 9 15 4"></polyline><path d="M4 20v-7a4 4 0 0 1 4-4h12"></path></svg><span class="counter oui">10000</span></a>
-                                                </div>
-
-                                                <div class="col s4 right-align">
-                                                      <!-- Modal Resultat Trigger -->
-                                                         <a class="waves-effect waves-light btn modal-trigger" href="#modal1">voir details</a>
-
-                                                </div>
-                                            </div>
-
-                                            </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-        </div>
-    </div>
-
-
-
-
-
-<!--<DroitPart-->
-        <div class="col l2" >
-                <div class="row">
-                    <div class="col l12">
-                        <div class="card white shafe">
-                        <div class="card-content white-text">
-                            <span class="card-title">Article</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Profile de l'utilisateur</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body class="log">
     
-        
-        </div>
-    </div>
-     </div>      
-     
+    <div class="row center-align">
+     <div class="container">
 
-
-
-
-
-  <!-- Modal Resultat -->
-  <div id="modal1" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>Resultat</h4>
-      <div class="row">
-          <div class="col s8">
-                <ul class="collection">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle teal">people</i>
-                            <span class="title">Genre</span>
-                            <p> H <br>
-                                F
-                            </p>
-                            <div class="secondary-content white-text"> <br> <span class="blue white-text badge">850 : 76%</span> <br> <span class="red white-text badge" >120 : 24%</span>  </div>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle green">map</i>
-                            <span class="title">Localité</span>
-                            <p>First Line <br>
-                                Second Line
-                            </p>
-                            <div class="secondary-content white-text"> <br> <span class="orange white-text badge">850 : 76%</span> <br> <span class="black white-text badge" >120 : 24%</span>  </div>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle blue">insert_chart</i>
-                            <span class="title">Title</span>
-                            <p>1ere Commune <br>
-                                2nd Commune
-                            </p>
-                            <div class="secondary-content white-text"> <br> <span class="green white-text badge">850 : 76%</span> <br> <span class="indigo white-text badge" >120 : 24%</span>  </div>
-                        </li>
-                      </ul>
-          </div>
-          <div class="col s4">
-            <canvas id="myChart" width="40" height="40"></canvas>    
-         </div>
-
-          </div>
-      </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-    </div>
-  </div>
-
-
-     <footer>
-         <div class="row container center-align">
-             <div class="col s4 l4">
-                 <img src="i/pbf1.png" alt="" style="width:100px;">
-             </div>
-             <div class="col s4 l4">
-                <img src="i/niger.png" alt="" style="width:140px;">
+         <div class="card cardelog" style="margin: 25vh auto;max-width: 30rem;">
+            <div class="card-image">
+              <img src="i/Welcom.jpg" class="welcomimg" style="width: 30rem;border-radius: 50%;margin:-1rem auto auto auto;position: fixed;">
             </div>
-            <div class="col s4 l4">
-                <img src="i/unicef.png" alt="" style="width:160px;">
+                <div class="card-content">
+
+                        <ul id="tabs-swipe-demo" class="tabs">
+                                <li class="tab col s6 "><a class="active green-text deep-orange lighten-5" href="#connecter" >Se connecter</a></li>
+                                <li class="tab col s6 red-text"><a class="light-green lighten-4" href="#inscrir">S'inscrire</a></li>
+                        </ul>
+
+                            <div class="row ">
+
+                                <div id="connecter" class="col s12">
+
+                                    <div class="row">
+                                            <form class="col s12 kull" style="height: 700px;">
+                                              <div class="row">
+                                                  <br>
+                                                  <br>
+                                                <div class="input-field col s6">
+                                                  <input id="first_name" type="text" class="validate">
+                                                  <label for="first_name">First Name</label>
+                                                </div>
+                                                <div class="input-field col s6">
+                                                  <input id="last_name" type="text" class="validate">
+                                                  <label for="last_name">Last Name</label>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                  <input id="password" type="password" class="validate">
+                                                  <label for="password">Password</label>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="input-field col s12">
+                                                  <input id="email" type="email" class="validate">
+                                                  <label for="email">Email</label>
+                                                  
+                                                </div>
+                                              </div>
+                                            </form>
+                                    </div>
+
+                                </div>
+
+                                <div id="inscrir" class="col s12">
+                                        <div class="row">
+                                                <form class="col s12 kull" style="height: 700px;">
+                                                <div class="row">
+                                                        <br>
+                                                        <br>
+                                                    <div class="input-field col s6">
+                                                    <input id="first_name2" type="text" class="validate">
+                                                    <label for="first_name2">First Name</label>
+                                                    </div>
+                                                    <div class="input-field col s6">
+                                                    <input id="last_name2" type="text" class="validate">
+                                                    <label for="last_name2">Last Name</label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                    <input id="password2" type="password" class="validate">
+                                                    <label for="password2">Password</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="input-field col s12">
+                                                    <input id="email2" type="email" class="validate">
+                                                    <label for="email2">Email</label>
+                                                    <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s12 white-text">
+                                                    Or :
+                                                    <div class="input-field inline" >
+                                                        <input id="email_inline2" type="number" class="validate" >
+                                                        <label for="email_inline2">Phone Number</label>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="input-field col s12">
+                                                        <input id="email2" type="email" class="validate">
+                                                        <label for="email2">Email</label>
+                                                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                </div>
+
+                            </div>
+                            
+                </div>
+                <a class="waves-effect waves-light btn-large white black-text shafe" href="page.html"><i class="material-icons right"><img src="i/rightCircle.svg" alt=""></i>Connexion</a>
+
+                <div class="card-action">
+             <a href="#" class="btn-flat indigo-text" style="font-size: 12px;">Mot de passe oublié ?</a>
             </div>
-         </div>
-     </footer>
+          </div>
+     </div>
+    </div>
 
-
-     <script>
-         //NavBar
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, {});
-        });
-
-        //chips
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.chips');
-        var instances = M.Chips.init(elems, {});
-  });
      
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems, {});
-        });
-
-     </script>
 
 <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Non','Oui'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 5],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-    
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(75, 192, 192, 1)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {legend: {
-        display: true,
-      },
-      scales: {
-        xAxes: [{
-          gridLines: {
-            display: false,
-          },
-          
-        }],
-        yAxes: [{
-          gridLines: {
-            drawBorder: false,
-          },
-          ticks: {
-            beginAtZero: true,
-            fontSize: 15,
-            fontColor: 'lightgrey',
-            maxTicksLimit: 5,
-            padding: 25,
-          }
-        }]}
-                }
-            }
-        });
-        </script>
-        
+   //Tabs
+ document.addEventListener('DOMContentLoaded', function() {
+        var elem = document.querySelector('.tabs'); 
+        var instance = M.Tabs.init(elem, {swipeable:true});
+      });
+</script>
+
+
 </body>
 </html>
